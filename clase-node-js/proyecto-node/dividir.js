@@ -2,4 +2,8 @@ var dividir = function(n1,n2){
     return n1/n2;
 }
 
-module.exports = dividir;
+var otra = dividir;
+
+var ultima = otra;
+
+module.exports = ultima;
