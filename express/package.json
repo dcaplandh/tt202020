@@ -1,0 +1,14 @@
+{
+  "name": "primerproyecto",
+  "version": "1.0.0",
+  "description": "Mi primer proyecto con express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Diego Caplan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
