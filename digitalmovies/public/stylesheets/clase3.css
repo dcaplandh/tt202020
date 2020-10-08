@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding:0;
+}
+
+.container{
+    background:pink;
+}
+.container.home{
+    width:100%;
+}
+.container.products{
+    width:80%;
+}
+.container header{
+    background:green;
+    height:80px;
+}
+header,footer{
+    padding:10px;
+}
+aside,main{
+    display:inline-block;
+    vertical-align: top;
+    height:400px;
+}
+.container aside{
+    background:blue;
+    width:30%;
+}
+.container main{
+    background:white;
+    /*
+    margin:4px 4px 4px 4px; top right bottom left
+    margin:4px 4px 4px; top  costados  bottom
+    margin:4px 4px; arribayabajo costados
+    margin:4px; 4 lados
+    */
+    width:69%;
+}
+.container footer{
+    background:yellow;
+    height:50px;
+}
+main div{
+    height:40px;
+    background:violet;
+    border:3px solid black;
+}
+main div.product-inline{
+    height:300px;
+    display:inline-block;
+    width:45%;
+}
+main div:nth-child(2){
+    margin-right:9%;
+}
+
+/*SEGUNDA PARTE*/
+section.container-small{
+    width:90%;
+    margin:10px auto;
+    background:black;
+    height:100px;
+    overflow: scroll;
+}
+section.container-small article{
+    width:200px;
+    height:200px;
+    background:white;
+    display:inline-block;
+    margin:5px 10px;
+    box-shadow: 1px 1px 5px grey;
+    /*horizontal  vertical  blur  color*/
+    border-radius: 500%;
+}
+section.container-small article:hover{
+    box-shadow:inset 1px 1px 5px grey;
+}
+div.logo{
+    width:50px;
+    height:50px;
+    background:white;
+}
+div.logo img{
+    width:100%;
+}
+/*
+BLOCK
+width
+height
+margin
+padding
+border
+
+INLINE
+depende solamente de su contenido
+permite tener elementos a los costados
+
+INLINE-BLOCK
+permite tener elementos a los costados
+width
+height
+margin
+padding
+border
+
+display:flex;
+
+
+
+*/

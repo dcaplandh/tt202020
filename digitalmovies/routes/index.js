@@ -14,5 +14,7 @@ router.get('/clase1A', function(req, res, next) {
 router.get('/clase2', function(req, res, next) {
   res.render('clasecss');
 });
-
+router.get('/clase3', function(req, res, next) {
+  res.render('clase3');
+});
 module.exports = router;
