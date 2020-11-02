@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <%- include("header") %>
+    <ul>
+        <% productos.forEach(function(prod,i){ %>
+            <li> <%= prod.nombre %> - $ <%= prod.precio %> </li>
+            <!--<img src="<%= prod.imagen %>" alt="">
+            <p>$ <%= prod.descripcion %></p>-->
+        <% }); %>
+        
+        <% for(var i=0; i < productos.length; i++){ %>
+            <li> <%= productos[i] %>  - <%= i %></li>
+        <% }; %>
+    </ul>
+    <%- include("footer") %>
+</body>
+</html>

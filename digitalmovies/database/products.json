@@ -1,0 +1,22 @@
+[
+    {
+        "id":34,
+        "nombre":"Remera Nike",
+        "precio":234567890
+    },
+    {
+        "id":45,
+        "nombre":"Pelota Nike",
+        "precio":400
+    },
+    {
+        "id":3,
+        "nombre":"Cartera Negra",
+        "precio":3500
+    },
+    {
+        "id": 90,
+        "nombre":"Zapatillas Adidas",
+        "precio":7600
+    }
+]
