@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edicion usuario</title>
+</head>
+<body>
+    <h1>Edicion usuario</h1>
+    <form action="/users/edit/<%= userFound.id %>" method="POST">
+        <input type="text" name="nombre" value="<%= userFound.nombre %>" placeholder="Ingresa tu nombre">
+        <br>
+        <input type="text" name="contrasenia" value="<%= userFound.contrasenia %>" placeholder="*****">
+        <br>
+        <input type="text" name="email" value="<%= userFound.email %>" placeholder="Ingresa tu email">
+        <br>
+        <button type="submit">EDICION USUARIO</button>
+    </form>
+</body>
+</html>
