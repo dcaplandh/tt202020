@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <form action="/users/register" method="POST">
+        Nombre Completo:
+        <input type="text" name="full_name">
+        <br>
+        Email:
+        <input type="text" name="email">
+        <br>
+        Contraseña:
+        <input type="text" name="password">
+        <br>
+        Confirmar Contraseña:
+        <input type="text" name="passwordConfirmation">
+        <br>   
+        <button type="submit">REGISTER</button>
+    </form>
+    <% if(typeof errors != 'undefined'){ %>
+        <% console.log(errors); %>
+    <% } %>
+</body>
+</html>

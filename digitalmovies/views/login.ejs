@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <form action="/users/login" method="POST">
+        Email:
+        <input type="text" name="email" <% if(typeof email != 'undefined'){ %> value="<%= email %>" <% } %> >
+        <br>
+        Contraseña:
+        <input type="text" name="password">
+        <br>
+        Recordarme:
+        <input type="checkbox" name="recordarme">
+        <br>    
+        <% if(typeof frase != 'undefined'){ %>
+            <span style="color:red;font-size:12px;"><%= frase %></span>
+            <% } %>
+        <br>
+        <button type="submit">LOGIN</button>
+    </form>
+</body>
+</html>
